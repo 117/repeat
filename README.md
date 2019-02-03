@@ -33,12 +33,11 @@ new Loop()
 
 These methods are available to Loop objects.
 
-| Method            | Description                   | Return  |
-| :---------------- | :---------------------------- | :------ |
-| `Loop()`          | Build the current loop chain. | new     |
-| `once(?async)`    | Perform the loop once.        | current |
-| `forever(?async)` | Perform the loop infinitely.  | current |
-| `cancel()`        | Cancel a forever loop.        | current |
+| Method            | Description                  | Returns  |
+| :---------------- | :--------------------------- | :------: |
+| `once(?async)`    | Perform the loop once.       | the loop |
+| `forever(?async)` | Perform the loop infinitely. | the loop |
+| `cancel()`        | Cancel a forever loop.       | the loop |
 
 ### todo
 
