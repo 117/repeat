@@ -36,9 +36,9 @@ These methods are available to Loop objects.
 | Method            | Description                   | Return  |
 | :---------------- | :---------------------------- | :------ |
 | `Loop()`          | Build the current loop chain. | new     |
-| `once(?async)`    | Perform the loop once.        | current |
-| `forever(?async)` | Perform the loop infinitely.  | current |
-| `cancel()`        | Cancel a forever loop.        | current |
+| `once(?async)`    | Perform the loop once.        | this    |
+| `forever(?async)` | Perform the loop infinitely.  | this    |
+| `cancel()`        | Cancel a forever loop.        | this    |
 
 ### todo
 
