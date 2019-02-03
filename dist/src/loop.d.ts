@@ -2,12 +2,11 @@ import { Task } from "./task";
 export declare class Loop {
     tasks: Array<Task>;
     alive: boolean;
-    async: boolean;
-    build(async: boolean): this;
-    once(async: boolean): this;
-    start(async: boolean): this;
+    do(callable?: CallableFunction, ...args: Array<Object>): this;
+    once(async?: boolean): this;
+    forever(async?: boolean): this;
     stop(): this;
-    add(task: Task): void;
-    runAsync(): Promise<void>;
-    runSync(): void;
+    add(task: Task): this;
+    private runAsync;
+    private runSync;
 }

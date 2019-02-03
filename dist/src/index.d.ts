@@ -1,10 +1,7 @@
 import { Loop } from "./loop";
-export declare class Factory {
-    static loop: Loop;
-    static spawn(): void;
-    static do(callable?: CallableFunction, ...args: Array<Object>): typeof Factory;
-    static start(async?: boolean): Loop;
-    static build(async?: boolean): Loop;
-    static once(async?: boolean): Loop;
-}
-export default Factory;
+import { Task } from "./task";
+declare const _default: {
+    Loop: typeof Loop;
+    Task: typeof Task;
+};
+export default _default;

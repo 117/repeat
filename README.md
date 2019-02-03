@@ -9,27 +9,34 @@
 
 ## usage
 
-```javascript
-import loop from "loop";
+Here is an example loop that runs once.
 
-const example = loop
+```javascript
+import { Loop } from "loop";
+
+new Loop()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
-  .build();
+  .once();
+```
 
-example.once();
+Console would log the following.
+
+```txt
+> how are you?
+> good
 ```
 
 ### methods
 
 These methods are available to Loop objects.
 
-| Method         | Description                   | Return  |
-| :------------- | :---------------------------- | :------ |
-| `Loop(async?)` | Build the current loop chain. | new     |
-| `once()`       | Perform the loop once.        | current |
-| `forever()`    | Perform the loop infinitely.  | current |
-| `cancel()`     | Cancel a forever loop.        | current |
+| Method            | Description                   | Return  |
+| :---------------- | :---------------------------- | :------ |
+| `Loop()`          | Build the current loop chain. | new     |
+| `once(?async)`    | Perform the loop once.        | current |
+| `forever(?async)` | Perform the loop infinitely.  | current |
+| `cancel()`        | Cancel a forever loop.        | current |
 
 ### todo
 
@@ -37,4 +44,4 @@ Nothing planned yet.
 
 ### contribute
 
-Pull requests are welcome, collaborators too! 🥳
+Pull requests are welcome. So are collaborators! 🥳

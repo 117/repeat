@@ -1,28 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _1 = require(".");
+const task_1 = require("./task");
 class Loop {
     constructor() {
         this.tasks = [];
         this.alive = true;
-        this.async = false;
     }
-    build(async) {
-        _1.Factory.spawn();
+    do(callable = () => null, ...args) {
+        this.add(new task_1.Task(callable, args));
         return this;
     }
-    once(async) {
+    once(async = false) {
         this.alive = false;
-        this.async = async;
         (async && (async (self) => self.runAsync())(this)) || this.runSync();
-        _1.Factory.spawn();
         return this;
     }
-    start(async) {
+    forever(async = false) {
         this.alive = true;
-        this.async = async;
         (async && (async (self) => self.runAsync())(this)) || this.runSync();
-        _1.Factory.spawn();
         return this;
     }
     stop() {
@@ -31,6 +26,7 @@ class Loop {
     }
     add(task) {
         this.tasks.push(task);
+        return this;
     }
     async runAsync() {
         for (let task of this.tasks) {
