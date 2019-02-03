@@ -9,18 +9,20 @@
 
 ## usage
 
-Here is an example loop that runs once.
+Before you can start creating loops, you must import the Loop class.
 
 ```javascript
 import { Loop } from "loop";
+```
 
+Here is an example loop that runs once.
+
+```
 new Loop()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
   .once();
 ```
-
-Console would log the following.
 
 ```txt
 > how are you?
