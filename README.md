@@ -7,7 +7,7 @@
 
 `npm install --save 117/loop`
 
-## usage
+### usage
 
 Before you can start creating loops, you must import the Loop class.
 
@@ -24,20 +24,20 @@ new Loop()
   .once();
 ```
 
-```txt
-> how are you?
-> good
-```
+### async or sync
+
+By default all loops are **synchronous**, however it is easy to change that.  
+Simply pass a boolean to the `.once` or `.forever` methods, for an **asynchronous** loop use `true`.
 
 ### methods
 
 These methods are available to Loop objects.
 
-| Method            | Description                  | Returns  |
-| :---------------- | :--------------------------- | :------: |
-| `once(?async)`    | Perform the loop once.       | the loop |
-| `forever(?async)` | Perform the loop infinitely. | the loop |
-| `cancel()`        | Cancel a forever loop.       | the loop |
+| Method            | Description                  |
+| :---------------- | :--------------------------- |
+| `once(?async)`    | Perform the loop once.       |
+| `forever(?async)` | Perform the loop infinitely. |
+| `cancel()`        | Cancel a forever loop.       |
 
 ### todo
 
