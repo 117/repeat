@@ -7,24 +7,34 @@
 
 `npm install --save 117/loop`
 
-### usage
+## usage
 
 ```javascript
 import loop from "loop";
 
-loop
-  .do(() => console.log("hey")) // pass functions
-  .do(console.log, "how", "are", "you") // or functions and arguments
-  .do(console.log, "doing?")
-  .start();
+const example = loop
+  .do(() => console.log("how are you?"))
+  .do(() => console.log("good"))
+  .build();
+
+example.once();
 ```
 
-You would see the following in console.
+### methods
 
-```log
-hey
-how are you
-doing?
-```
+These methods are available to Loop objects.
 
-Repeated forever, or until `.stop()` is called.
+| Method         | Description                   | Return  |
+| :------------- | :---------------------------- | :------ |
+| `Loop(async?)` | Build the current loop chain. | new     |
+| `once()`       | Perform the loop once.        | current |
+| `forever()`    | Perform the loop infinitely.  | current |
+| `cancel()`     | Cancel a forever loop.        | current |
+
+### todo
+
+Nothing planned yet.
+
+### contribute
+
+Pull requests are welcome, collaborators too! 🥳
