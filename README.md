@@ -24,20 +24,18 @@ new Loop()
   .once();
 ```
 
-```txt
-> how are you?
-> good
-```
+> `how are you?`  
+> `good`
 
 ### methods
 
 These methods are available to Loop objects.
 
-| Method            | Description                  | Returns  |
-| :---------------- | :--------------------------- | :------: |
-| `once(?async)`    | Perform the loop once.       | the loop |
-| `forever(?async)` | Perform the loop infinitely. | the loop |
-| `cancel()`        | Cancel a forever loop.       | the loop |
+| Method            | Description                  |
+| :---------------- | :--------------------------- |
+| `once(?async)`    | Perform the loop once.       |
+| `forever(?async)` | Perform the loop infinitely. |
+| `cancel()`        | Cancel a forever loop.       |
 
 ### todo
 
