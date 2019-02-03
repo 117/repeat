@@ -17,7 +17,7 @@ import { Loop } from "loop";
 
 Here is an example loop that runs once.
 
-```
+```javascript
 new Loop()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
