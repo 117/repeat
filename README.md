@@ -9,13 +9,15 @@
 
 ### usage
 
-Before you can start creating loops, you must import the Loop class.
+Before you can start creating loops...
 
 ```javascript
 import { Loop } from "loop";
 ```
 
-Here is an example loop that runs once.
+### example
+
+The following loop will run all tasks once, in place.
 
 ```javascript
 new Loop()
