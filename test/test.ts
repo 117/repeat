@@ -1,5 +1,15 @@
 import loop from "../src/index";
 import ava from "ava";
+import { Loop } from "../src/loop";
+
+ava("build", test => {
+  const testLoop = loop.do(() => null).build();
+  if (testLoop instanceof Loop) {
+    test.pass("loop built successfully");
+  } else {
+    test.fail("could not build loop");
+  }
+});
 
 ava("sync", test => {
   let n: number = 0;

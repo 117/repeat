@@ -7,18 +7,22 @@ class Loop {
         this.alive = true;
         this.async = false;
     }
+    build(async) {
+        _1.Factory.spawn();
+        return this;
+    }
     once(async) {
         this.alive = false;
         this.async = async;
         (async && (async (self) => self.runAsync())(this)) || this.runSync();
-        _1.Factory.spawn(this);
+        _1.Factory.spawn();
         return this;
     }
     start(async) {
         this.alive = true;
         this.async = async;
         (async && (async (self) => self.runAsync())(this)) || this.runSync();
-        _1.Factory.spawn(this);
+        _1.Factory.spawn();
         return this;
     }
     stop() {

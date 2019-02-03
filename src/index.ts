@@ -5,7 +5,7 @@ import { Task } from "./task";
 
 export class Factory {
   public static loop: Loop = new Loop();
-  static spawn(loop: Loop) {
+  static spawn() {
     this.loop = new Loop();
   }
   static do(callable: CallableFunction = () => null, ...args: Array<Object>) {
@@ -14,6 +14,9 @@ export class Factory {
   }
   static start(async: boolean = false) {
     return this.loop.start(async);
+  }
+  static build(async: boolean = false) {
+    return this.loop.build(async);
   }
   static once(async: boolean = false) {
     return this.loop.once(async);

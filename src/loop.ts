@@ -5,18 +5,22 @@ export class Loop {
   tasks: Array<Task> = [];
   alive: boolean = true;
   async: boolean = false;
+  build(async: boolean) {
+    Factory.spawn();
+    return this;
+  }
   once(async: boolean) {
     this.alive = false;
     this.async = async;
     (async && (async self => self.runAsync())(this)) || this.runSync();
-    Factory.spawn(this);
+    Factory.spawn();
     return this;
   }
   start(async: boolean) {
     this.alive = true;
     this.async = async;
     (async && (async self => self.runAsync())(this)) || this.runSync();
-    Factory.spawn(this);
+    Factory.spawn();
     return this;
   }
   stop() {

@@ -1,6 +1,6 @@
 {
   "name": "loop",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
