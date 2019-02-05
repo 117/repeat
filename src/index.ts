@@ -1,9 +1,4 @@
 "use strict";
 
-import { Loop } from "./loop";
-import { Task } from "./task";
-
-export default {
-  Loop,
-  Task
-};
+export { Loop } from "./loop";
+export { Task } from "./task";

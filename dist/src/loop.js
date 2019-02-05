@@ -20,7 +20,7 @@ class Loop {
         (async && (async (self) => self.runAsync())(this)) || this.runSync();
         return this;
     }
-    stop() {
+    cancel() {
         this.alive = false;
         return this;
     }

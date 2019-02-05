@@ -6,7 +6,6 @@ ava("build", test => {
     .do(() => null)
     .do(() => null)
     .do(() => null);
-
   test.is(loop.tasks.length, 3);
 });
 

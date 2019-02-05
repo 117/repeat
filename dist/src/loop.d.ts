@@ -5,7 +5,7 @@ export declare class Loop {
     do(callable?: CallableFunction, ...args: Array<Object>): this;
     once(async?: boolean): this;
     forever(async?: boolean): this;
-    stop(): this;
+    cancel(): this;
     add(task: Task): this;
     private runAsync;
     private runSync;
