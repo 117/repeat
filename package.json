@@ -1,11 +1,11 @@
 {
   "name": "loop",
-  "version": "2.3.2",
+  "version": "2.3.4",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
     "build": "tsc",
-    "test": "tsc && ava dist/test"
+    "test": "tsc && ava dist/test --verbose"
   },
   "author": "117",
   "license": "MIT",
