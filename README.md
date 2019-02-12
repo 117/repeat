@@ -1,6 +1,6 @@
 # loop
 
-![](https://badgen.net/github/last-commit/117/fir?color=055ff3)
+![](https://badgen.net/codeclimate/loc/117/fir?color=055ff3)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 
 ### install
