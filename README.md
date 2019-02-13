@@ -7,14 +7,14 @@
 
 ### install
 
-`npm install --save 117/loop`
+`npm install --save @unsc/loop`
 
 ### usage
 
 Before you can start creating loops...
 
 ```javascript
-import { Loop } from "loop";
+import { Loop } from "@unsc/loop";
 ```
 
 ### example
