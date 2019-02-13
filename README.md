@@ -43,10 +43,6 @@ These methods are available to Loop objects.
 | `forever(?async)` | Perform the loop infinitely. |
 | `cancel()`        | Cancel a forever loop.       |
 
-### todo
-
-Nothing planned yet.
-
 ### contribute
 
 Pull requests are welcome. So are collaborators! 🥳
