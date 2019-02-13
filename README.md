@@ -45,4 +45,4 @@ These methods are available to Loop objects.
 
 ### contribute
 
-Pull requests are welcome. So are collaborators! 🥳
+Pull requests are welcome.
