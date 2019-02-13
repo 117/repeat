@@ -1,6 +1,8 @@
 # loop
 
-![](https://badgen.net/badgesize/gzip/https://github.com/117/loop/archive/master.zip?label=code%20size&color=055ff3)
+![](https://badgen.net/npm/v/@unsc/loop?color=grey)
+![](https://badgen.net/david/dep/117/loop)
+![](https://badgen.net/packagephobia/install/@unsc/loop?color=055ff3)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 
 ### install
