@@ -1,6 +1,6 @@
 {
-  "name": "loop",
-  "version": "2.3.4",
+  "name": "@unsc/loop",
+  "version": "2.3.5",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
@@ -9,6 +9,23 @@
   },
   "author": "117",
   "license": "MIT",
+  "keywords": [
+    "task",
+    "repeating",
+    "chain",
+    "tasks",
+    "scheduler",
+    "loop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/117/loop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/117/loop/issues"
+  },
+  "homepage": "https://github.com/117/loop#readme",
+  "dependencies": {},
   "devDependencies": {
     "ava": "^1.2.0",
     "typescript": "^3.3.1"
