@@ -1,17 +1,25 @@
 import ava from "ava";
-import { Loop } from "../src/loop";
+import loop, { Loop } from "../src";
 
-ava("build", test => {
-  const loop = new Loop()
+ava("build callback", function(test) {
+  const loop0 = loop()
     .do(() => null)
     .do(() => null)
     .do(() => null);
-  test.is(loop.tasks.length, 3);
+  test.is(loop0.tasks.length, 3);
 });
 
-ava("sync", test => {
+ava("build explicit", function(test) {
+  const loop1 = new Loop()
+    .do(() => null)
+    .do(() => null)
+    .do(() => null);
+  test.is(loop1.tasks.length, 3);
+});
+
+ava("sync", function(test) {
   let n: number = 0;
-  new Loop()
+  loop()
     .do(() => n++)
     .do(() => n++)
     .do(() => n++)
@@ -19,11 +27,11 @@ ava("sync", test => {
   test.is(n, 3);
 });
 
-ava("async", async test => {
+ava("async", async function(test) {
   test.is(
     await new Promise(resolve => {
       let n: number = 0;
-      new Loop()
+      loop()
         .do(() => n++)
         .do(() => n++)
         .do(() => resolve(++n))

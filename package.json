@@ -1,11 +1,11 @@
 {
   "name": "@unsc/loop",
-  "version": "2.3.6",
+  "version": "2.4.6",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
-    "build": "tsc",
-    "test": "tsc && ava dist/test --verbose"
+    "test": "ava dist/test --verbose",
+    "build": "tsc"
   },
   "author": "117",
   "license": "MIT",

@@ -14,7 +14,7 @@
 Before you can start creating loops...
 
 ```javascript
-import { Loop } from "@unsc/loop";
+import loop from "@unsc/loop";
 ```
 
 ### example
@@ -22,7 +22,7 @@ import { Loop } from "@unsc/loop";
 The following loop will run all tasks once, in place.
 
 ```javascript
-new Loop()
+const myLoop = loop()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
   .once();
