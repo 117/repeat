@@ -17,8 +17,6 @@ Before you can start creating loops...
 import loop from "@unsc/loop";
 ```
 
-### example
-
 The following loop will run all tasks once, in place.
 
 ```javascript
@@ -27,11 +25,6 @@ const myLoop = loop()
   .do(() => console.log("good"))
   .once();
 ```
-
-### async or sync
-
-By default all loops are **synchronous**, however it is easy to change that.  
-Simply pass a boolean to the `.once` or `.forever` methods, for an **asynchronous** loop use `true`.
 
 ### methods
 
@@ -42,6 +35,11 @@ These methods are available to Loop objects.
 | `once(?async)`    | Perform the loop once.       |
 | `forever(?async)` | Perform the loop infinitely. |
 | `cancel()`        | Cancel a forever loop.       |
+
+### async or sync
+
+By default all loops are **synchronous**, however it is easy to change that.  
+Simply pass a boolean to the `.once` or `.forever` methods, for an **asynchronous** loop use `true`.
 
 ### contribute
 
