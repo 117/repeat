@@ -11,16 +11,12 @@
 
 ### usage
 
-Before you can start creating loops...
-
-```javascript
-import loop from "@unsc/loop";
-```
-
 The following loop will run all tasks once, in place.
 
 ```javascript
-const myLoop = loop()
+import loop from "@unsc/loop";
+
+loop()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
   .once();
