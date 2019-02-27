@@ -1,13 +1,11 @@
 # loop
 
-![](https://badgen.net/npm/v/@unsc/loop?color=grey)
-![](https://badgen.net/npm/dw/@unsc/loop)
-![](https://badgen.net/packagephobia/install/@unsc/loop?color=055ff3)
+![](https://badgen.net/badgesize/gzip/https://github.com/117/loop/archive/master.zip?label=repo%20size&color=055ff3)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 
 ### install
 
-`npm install --save @unsc/loop`
+`npm install --save 117/loop`
 
 ### usage
 
