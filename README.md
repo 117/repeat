@@ -32,11 +32,6 @@ These methods are available to Loop objects.
 | `forever(?async)` | Perform the loop infinitely. |
 | `cancel()`        | Cancel a forever loop.       |
 
-### async or sync
-
-By default all loops are **synchronous**, however it is easy to change that.  
-Simply pass a boolean to the `.once` or `.forever` methods, for an **asynchronous** loop use `true`.
-
 ### contribute
 
 Pull requests are encouraged.
