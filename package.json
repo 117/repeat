@@ -1,13 +1,13 @@
 {
-  "name": "@unsc/loop",
-  "version": "2.4.8",
+  "name": "@detach/loop",
+  "version": "2.4.9",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
     "test": "ava dist/test --verbose",
     "build": "tsc"
   },
-  "author": "117",
+  "author": "detach",
   "license": "MIT",
   "keywords": [
     "task",

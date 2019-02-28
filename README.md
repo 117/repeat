@@ -1,20 +1,20 @@
 # loop
 
-![](https://badgen.net/npm/v/@unsc/loop?color=grey)
-![](https://badgen.net/npm/dw/@unsc/loop)
-![](https://badgen.net/packagephobia/install/@unsc/loop?color=055ff3)
+![](https://badgen.net/npm/v/@detach/loop?color=grey)
+![](https://badgen.net/npm/dw/@detach/loop)
+![](https://badgen.net/packagephobia/install/@detach/loop?color=055ff3)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 
 ### install
 
-`npm install --save @unsc/loop`
+`npm install --save @detach/loop`
 
 ### usage
 
 The following loop will run all tasks once, in place.
 
 ```javascript
-import loop from "@unsc/loop";
+import loop from "@detach/loop";
 
 loop()
   .do(() => console.log("how are you?"))
