@@ -9,7 +9,7 @@
 
 `npm install --save @detach/loop`
 
-### usage
+### example
 
 The following loop will run all tasks once, in place.
 
