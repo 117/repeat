@@ -7,7 +7,7 @@
 
 ### install
 
-`npm install --save @detach/loop`
+`npm install @detach/loop`
 
 ### example
 
