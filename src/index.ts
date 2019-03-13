@@ -5,7 +5,7 @@ export class Task {
   ) {}
 }
 
-export class Loop {
+export class Repeat {
   tasks: Array<Task> = [];
   alive: boolean = true;
   do(callable: CallableFunction = () => null, ...args: Array<Object>) {
@@ -44,4 +44,4 @@ export class Loop {
   }
 }
 
-export default () => new Loop();
+export default () => new Repeat();

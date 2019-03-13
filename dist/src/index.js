@@ -7,7 +7,7 @@ class Task {
     }
 }
 exports.Task = Task;
-class Loop {
+class Repeat {
     constructor() {
         this.tasks = [];
         this.alive = true;
@@ -47,5 +47,5 @@ class Loop {
         this.alive && this.runSync();
     }
 }
-exports.Loop = Loop;
-exports.default = () => new Loop();
+exports.Repeat = Repeat;
+exports.default = () => new Repeat();

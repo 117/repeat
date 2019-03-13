@@ -1,22 +1,24 @@
 # loop
 
-![](https://badgen.net/npm/v/@detach/loop?color=grey)
-![](https://badgen.net/npm/dw/@detach/loop)
-![](https://badgen.net/packagephobia/install/@detach/loop?color=055ff3)
+![](https://badgen.net/npm/v/repeat?color=grey)
+![](https://badgen.net/npm/dw/repeat)
+![](https://badgen.net/packagephobia/install/repeat?color=055ff3)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
+
+> > **NOTE TO USERS OF Repeat.js**  
+> > I plan to make this new version isomorphic, in addition to supporting the same scheduling features.  
+> > But for now you can use the previous version if you need it here: `npm install repeat@0.0.6`
 
 ### install
 
-`npm install @detach/loop`
+`npm install repeat`
 
 ### example
 
 The following loop will run all tasks once, in place.
 
 ```javascript
-import loop from "@detach/loop";
-
-loop()
+repeat()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
   .once();

@@ -3,7 +3,7 @@ export declare class Task {
     args: Array<Object>;
     constructor(callback?: CallableFunction, args?: Array<Object>);
 }
-export declare class Loop {
+export declare class Repeat {
     tasks: Array<Task>;
     alive: boolean;
     do(callable?: CallableFunction, ...args: Array<Object>): this;
@@ -14,5 +14,5 @@ export declare class Loop {
     private runAsync;
     private runSync;
 }
-declare const _default: () => Loop;
+declare const _default: () => Repeat;
 export default _default;
