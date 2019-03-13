@@ -6,8 +6,7 @@
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 
 > **Note to users of Repeat.js:**  
-> I plan to make this new version isomorphic, in addition to supporting the same scheduling features.  
-> But for now you can use the previous version if you need it here: `npm install repeat@0.0.6`
+> This new take on repeat will soon be isomorphic, in addition to supporting the same scheduling features. If you are dependent on the old version you can get it here: `npm install repeat@0.0.6`
 
 ### install
 
