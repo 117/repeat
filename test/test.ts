@@ -6,7 +6,7 @@ ava("build callback", function(test) {
     .do(() => null)
     .do(() => null)
     .do(() => null);
-  test.is(loop0.tasks.length, 3);
+  test.is(loop0.getTasks().length, 3);
 });
 
 ava("build explicit", function(test) {
@@ -14,7 +14,7 @@ ava("build explicit", function(test) {
     .do(() => null)
     .do(() => null)
     .do(() => null);
-  test.is(loop1.tasks.length, 3);
+  test.is(loop1.getTasks().length, 3);
 });
 
 ava("sync", function(test) {

@@ -6,10 +6,10 @@ export class Task {
 }
 
 export class Repeat {
-  tasks: Array<Task> = [];
-  alive: boolean = true;
+  private tasks: Array<Task> = [];
+  private alive: boolean = true;
   do(callable: CallableFunction = () => null, ...args: Array<Object>) {
-    this.add(new Task(callable, args));
+    this.tasks.push(new Task(callable, args));
     return this;
   }
   once(async: boolean = false) {
@@ -26,9 +26,11 @@ export class Repeat {
     this.alive = false;
     return this;
   }
-  add(task: Task) {
-    this.tasks.push(task);
-    return this;
+  isAlive(): boolean {
+    return this.alive;
+  }
+  getTasks(): Array<Task> {
+    return this.tasks;
   }
   private async runAsync() {
     for (let task of this.tasks) {
