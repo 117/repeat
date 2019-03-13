@@ -4,13 +4,14 @@ export declare class Task {
     constructor(callback?: CallableFunction, args?: Array<Object>);
 }
 export declare class Repeat {
-    tasks: Array<Task>;
-    alive: boolean;
+    private tasks;
+    private alive;
     do(callable?: CallableFunction, ...args: Array<Object>): this;
     once(async?: boolean): this;
     forever(async?: boolean): this;
     cancel(): this;
-    add(task: Task): this;
+    isAlive(): boolean;
+    getTasks(): Array<Task>;
     private runAsync;
     private runSync;
 }

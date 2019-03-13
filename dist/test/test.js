@@ -17,14 +17,14 @@ ava_1.default("build callback", function (test) {
         .do(() => null)
         .do(() => null)
         .do(() => null);
-    test.is(loop0.tasks.length, 3);
+    test.is(loop0.getTasks().length, 3);
 });
 ava_1.default("build explicit", function (test) {
     const loop1 = new src_1.Repeat()
         .do(() => null)
         .do(() => null)
         .do(() => null);
-    test.is(loop1.tasks.length, 3);
+    test.is(loop1.getTasks().length, 3);
 });
 ava_1.default("sync", function (test) {
     let n = 0;

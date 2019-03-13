@@ -13,7 +13,7 @@ class Repeat {
         this.alive = true;
     }
     do(callable = () => null, ...args) {
-        this.add(new Task(callable, args));
+        this.tasks.push(new Task(callable, args));
         return this;
     }
     once(async = false) {
@@ -30,9 +30,11 @@ class Repeat {
         this.alive = false;
         return this;
     }
-    add(task) {
-        this.tasks.push(task);
-        return this;
+    isAlive() {
+        return this.alive;
+    }
+    getTasks() {
+        return this.tasks;
     }
     async runAsync() {
         for (let task of this.tasks) {

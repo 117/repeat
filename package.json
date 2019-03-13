@@ -1,6 +1,6 @@
 {
   "name": "repeat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
