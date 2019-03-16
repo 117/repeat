@@ -1,5 +1,6 @@
 import ava from "ava";
-import repeat, { Repeat } from "../src";
+import repeat from "../src";
+import { Repeat } from "../src/repeat";
 
 ava("build callback", function(test) {
   const loop0 = repeat()
