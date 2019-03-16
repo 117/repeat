@@ -6,7 +6,7 @@
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 
 > **Looking for Repeat.js?:**  
-> This new take on repeat will soon be isomorphic in addition to supporting the same scheduling features as before. However if you are dependent on the old version you can get it here: `npm install repeat@0.0.6`
+> This new take on repeat will soon support the same scheduling features as before. However if you are dependent on the old version you can get it here: `npm install repeat@0.0.6`
 
 ### install
 
