@@ -14,24 +14,25 @@
 
 ### example
 
-The following loop will run all tasks once, in place.
+The following loop will run all tasks every second.
 
 ```javascript
 repeat()
   .do(() => console.log("how are you?"))
   .do(() => console.log("good"))
-  .once();
+  .every(1000);
 ```
 
 ### methods
 
 These methods are available.
 
-| Method            | Description               |
-| :---------------- | :------------------------ |
-| `once(?async)`    | Run the tasks once.       |
-| `forever(?async)` | Run the tasks infinitely. |
-| `cancel()`        | Stop execution of tasks.  |
+| Method                | Description                           |
+| :-------------------- | :------------------------------------ |
+| `once(?async)`        | Run the tasks once.                   |
+| `every(milliseconds)` | Run the tasks every `n` milliseconds. |
+| `forever(?async)`     | Run the tasks infinitely.             |
+| `cancel()`            | Stop execution of tasks.              |
 
 ### contribute
 
