@@ -2,16 +2,10 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const ava_1 = __importDefault(require("ava"));
-const src_1 = __importStar(require("../src"));
+const src_1 = __importDefault(require("../src"));
+const repeat_1 = require("../src/repeat");
 ava_1.default("build callback", function (test) {
     const loop0 = src_1.default()
         .do(() => null)
@@ -20,7 +14,7 @@ ava_1.default("build callback", function (test) {
     test.is(loop0.getTasks().length, 3);
 });
 ava_1.default("build explicit", function (test) {
-    const loop1 = new src_1.Repeat()
+    const loop1 = new repeat_1.Repeat()
         .do(() => null)
         .do(() => null)
         .do(() => null);
