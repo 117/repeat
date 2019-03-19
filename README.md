@@ -8,11 +8,15 @@
 > **Looking for Repeat.js?:**  
 > This new take on repeat will soon support the same scheduling features as before. However if you are dependent on the old version you can get it here: `npm install repeat@0.0.6`
 
-### install
+### Install
 
+From NPM:  
 `npm install repeat`
 
-### example
+From GitHub:  
+`npm install xist/repeat`
+
+### Example
 
 The following loop will run all tasks every second.
 
@@ -23,7 +27,7 @@ repeat()
   .every(1000);
 ```
 
-### methods
+### Methods
 
 These methods are available.
 
@@ -34,6 +38,6 @@ These methods are available.
 | `forever(?async)`     | Run the tasks infinitely.             |
 | `cancel()`            | Stop execution of tasks.              |
 
-### contribute
+### Contribute
 
 Pull requests are encouraged.

@@ -1,14 +1,22 @@
 {
   "name": "repeat",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "create repeating task chains",
   "main": "dist/src",
   "scripts": {
     "test": "ava dist/test --verbose",
     "build": "tsc"
   },
-  "author": "detach",
+  "author": "xist",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xist/repeat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xist/repeat/issues"
+  },
+  "homepage": "https://github.com/xist/repeat#readme",
   "keywords": [
     "task",
     "repeating",
@@ -18,14 +26,6 @@
     "loop",
     "repeat"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/117/repeat.git"
-  },
-  "bugs": {
-    "url": "https://github.com/117/repeat/issues"
-  },
-  "homepage": "https://github.com/117/repeat#readme",
   "dependencies": {
     "dormant": "^3.0.0"
   },
