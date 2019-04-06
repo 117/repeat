@@ -1,4 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const repeat_1 = require("./repeat");
-exports.default = () => new repeat_1.Repeat();
+// Supports both ES5 and ES6
+const repeat = require("./repeat");
+module.exports = () => new repeat.Repeat();
