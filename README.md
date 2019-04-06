@@ -24,7 +24,7 @@ The following loop will run all tasks every second.
 import repeat from "repeat";
 
 // For ES5 use:
-// const repeat = require('repeat').default;
+// const repeat = require("repeat").default;
 
 repeat()
   .do(() => console.log("how are you?"))
