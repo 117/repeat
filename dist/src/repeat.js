@@ -1,10 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const task_1 = require("./task");
-const dormant_1 = __importDefault(require("dormant"));
 class Repeat {
     constructor() {
         this.tasks = [];
@@ -20,7 +16,9 @@ class Repeat {
         return this;
     }
     every(milliseconds) {
-        this.do(dormant_1.default, milliseconds);
+        this.do((milliseconds) => {
+            return new Promise(resolve => setTimeout(resolve, milliseconds));
+        }, milliseconds);
         return this.forever(true);
     }
     forever(async = false) {

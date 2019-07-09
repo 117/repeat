@@ -1,5 +1,4 @@
 import { Task } from "./task";
-import dormant from "dormant";
 
 export class Repeat {
   private tasks: Array<Task> = [];
@@ -14,7 +13,9 @@ export class Repeat {
     return this;
   }
   every(milliseconds: number) {
-    this.do(dormant, milliseconds);
+    this.do((milliseconds: number) => {
+      return new Promise(resolve => setTimeout(resolve, milliseconds));
+    }, milliseconds);
     return this.forever(true);
   }
   forever(async: boolean = false): Repeat {
