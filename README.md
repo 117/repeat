@@ -1,10 +1,11 @@
 # repeat
 
 ![](https://badgen.net/npm/v/repeat?color=grey)
-![](https://badgen.net/npm/dw/repeat)
+![](https://badgen.net/npm/dw/repeat?color=purple)
 ![](https://badgen.net/packagephobia/install/repeat?color=055ff3)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
-
+![](https://app.fossa.io/api/projects/git%2Bgithub.com%2F117%2Frepeat.svg?type=shield)
+ 
 ### Install
 
 `npm install repeat`
@@ -37,3 +38,6 @@ These methods are available.
 ### Contribute
 
 Pull requests are encouraged.
+
+### License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F117%2Frepeat.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F117%2Frepeat?ref=badge_large) 
