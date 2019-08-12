@@ -1,8 +1,8 @@
 # repeat
 
 ![](https://badgen.net/npm/v/repeat?color=grey)
-![](https://badgen.net/npm/dy/repeat?color=orange)
-![](https://badgen.net/packagephobia/install/repeat?color=055ff3)
+![](https://badgen.net/npm/dy/repeat?color=055ff3)
+![](https://badgen.net/packagephobia/install/repeat?color=purple)
 ![](https://badgen.net/badge/code%20style/prettier/ff51bc)
 ![](https://app.fossa.io/api/projects/git%2Bgithub.com%2F117%2Frepeat.svg?type=shield)
  
