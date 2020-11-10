@@ -1,42 +1,103 @@
-# repeat
+# alpaca
 
-![](https://badgen.net/npm/v/repeat?color=grey)
-![](https://badgen.net/npm/dt/repeat?color=055ff3)
-![](https://badgen.net/badge/code%20style/prettier/ff51bc)
-![](https://app.fossa.io/api/projects/git%2Bgithub.com%2F117%2Frepeat.svg?type=shield)
- 
-### Install
+![version](https://img.shields.io/github/package-json/v/117/repeat?color=196DFF&style=flat-square)
+![language](https://img.shields.io/github/languages/code-size/117/repeat?color=F1A42E&style=flat-square)
+![maintenance](https://img.shields.io/github/workflow/status/117/repeat/continuous-integration?style=flat-square)
+![prettier](https://img.shields.io/static/v1?label=code%20style&message=prettier&color=ff51bc&style=flat-square)
 
-`npm install repeat`
+create repeating task chains
 
-### Example
+## Contents
 
-The following loop will run all tasks every second.
+- [Features](#features)
+- [Install](#install)
+- [Chain](#chain)
 
-```javascript
-import repeat from "repeat";
-// const repeat = require("repeat");
+## Features
 
-repeat()
-  .do(() => console.log("how are you?"))
-  .do(() => console.log("good"))
-  .every(1000);
+- [x] Chain any number of tasks and repeat them once or forever.
+- [x] Optional synchronous and asynchronous API.
+
+## Install
+
+From NPM:
+
+```cmd
+> npm i repeat
 ```
 
-### Methods
+## Chain
 
-These methods are available.
+### Creating a new chain
 
-| Method                | Description                           |
-| :-------------------- | :------------------------------------ |
-| `once(?async)`        | Run the tasks once.                   |
-| `every(milliseconds)` | Run the tasks every `n` milliseconds. |
-| `forever(?async)`     | Run the tasks infinitely.             |
-| `cancel()`            | Stop execution of tasks.              |
+The following chain will execute all tasks every second. A task is any callable
+function or promise.
 
-### Contribute
+```javascript
+import { Chain } from 'repeat'
 
-Pull requests are encouraged.
+let chain = new Chain()
 
-### License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F117%2Frepeat.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F117%2Frepeat?ref=badge_large) 
+chain
+  .add(
+    // task A
+    () => console.log('how are you?'),
+    // task B
+    () => console.log('good')
+    // you can add task C, D, E, F ...
+  )
+  .every(1000)
+```
+
+### Examples
+
+The following methods are available on the chain.
+
+- [add](#add)
+- [once](#once)
+- [every](#every)
+- [forever](#forever)
+- [cancel](#cancel)
+
+#### add
+
+```typescript
+// add any number of tasks to the chain
+chain.add(
+  () => console.log('cat'),
+  () => console.log('dog'),
+  () => console.log('fish')
+)
+```
+
+#### once
+
+```typescript
+// execute the tasks once
+chain.once()
+```
+
+#### every
+
+```typescript
+// execute the tasks every second
+chain.every(1000, false /** sync **/)
+```
+
+#### forever
+
+```typescript
+// execute the tasks as fast as possible
+chain.forever(false /** sync **/)
+```
+
+#### cancel
+
+```typescript
+// halt further execution of tasks
+chain.cancel()
+```
+
+## Contributing
+
+Pull requests are encouraged. 😁

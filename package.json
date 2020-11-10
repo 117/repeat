@@ -1,14 +1,15 @@
 {
   "name": "repeat",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "create repeating task chains",
-  "main": "dist/src",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "test": "ava dist/test --verbose",
-    "build": "tsc"
+    "build": "rimraf dist types && tsc && npm run test",
+    "test": "ava dist/test/** --verbose"
   },
   "author": "117",
-  "license": "MIT",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/117/repeat.git"
@@ -26,6 +27,8 @@
     "loop",
     "repeat"
   ],
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "ava": "^3.13.0",
+    "rimraf": "^3.0.2"
+  }
 }

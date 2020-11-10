@@ -1,3 +1,4 @@
-import { Repeat } from "./repeat";
+import { Chain } from './chain'
+export { Chain } from './chain'
 
-export default () => new Repeat();
+export default () => new Chain()
