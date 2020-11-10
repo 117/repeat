@@ -1,4 +1,4 @@
-# alpaca
+# repeat
 
 ![version](https://img.shields.io/github/package-json/v/117/repeat?color=196DFF&style=flat-square)
 ![language](https://img.shields.io/github/languages/code-size/117/repeat?color=F1A42E&style=flat-square)
