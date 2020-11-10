@@ -12,6 +12,7 @@ create repeating task chains
 - [Features](#features)
 - [Install](#install)
 - [Chain](#chain)
+- [Contributing](#contributing)
 
 ## Features
 
