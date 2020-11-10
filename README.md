@@ -31,7 +31,7 @@ From NPM:
 ### Creating a new chain
 
 The following chain will execute all tasks every second. A task is any callable
-function or promise.
+function.
 
 ```javascript
 import { Chain } from 'repeat'
