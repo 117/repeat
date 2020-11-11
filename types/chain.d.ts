@@ -5,7 +5,7 @@ export declare class Chain {
     do(...callable: Array<CallableFunction>): Chain;
     add(...callable: Array<CallableFunction>): Chain;
     once(async?: boolean): Chain;
-    every(milliseconds: number, async?: boolean): Chain;
+    every(milliseconds: number): Chain;
     forever(async?: boolean): Chain;
     cancel(): Chain;
     private async;

@@ -20,9 +20,9 @@ export class Chain {
     return this
   }
 
-  every(milliseconds: number, async: boolean = false) {
+  every(milliseconds: number) {
     this.add(() => new Promise((resolve) => setTimeout(resolve, milliseconds)))
-    return this.forever(async)
+    return this.forever(true)
   }
 
   forever(async: boolean = false): Chain {

@@ -28,9 +28,9 @@ class Chain {
         (async && ((self) => __awaiter(this, void 0, void 0, function* () { return self.async(); }))(this)) || this.sync();
         return this;
     }
-    every(milliseconds, async = false) {
+    every(milliseconds) {
         this.add(() => new Promise((resolve) => setTimeout(resolve, milliseconds)));
-        return this.forever(async);
+        return this.forever(true);
     }
     forever(async = false) {
         this.alive = true;
