@@ -35,7 +35,11 @@ The following chain will execute all tasks every second. A task is any callable
 function.
 
 ```javascript
+// ES6
 import { Chain } from 'repeat'
+
+// ES5
+// let { Chain } = require('repeat')
 
 let chain = new Chain()
 
