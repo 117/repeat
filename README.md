@@ -85,15 +85,15 @@ chain.once()
 #### every
 
 ```typescript
-// execute the tasks every second
-chain.every(1000, false /** sync **/)
+// execute the tasks asynchronously every second
+chain.every(1000)
 ```
 
 #### forever
 
 ```typescript
 // execute the tasks as fast as possible
-chain.forever(false /** sync **/)
+chain.forever()
 ```
 
 #### cancel
